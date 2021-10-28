@@ -1,0 +1,71 @@
+
+.row{
+    padding-left: 90px;
+    //align-items: center;
+}
+
+.container{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    width: 350px;
+    float: left;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #000000;
+    border-radius:20px ;
+    transform-style: preserve-3d;
+}
+
+.container .box:hover .name{
+    top: 40px;
+    opacity: 1;
+}
+
+.container .box .ver{
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: white;
+    background: #333;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container .box:hover .ver{
+
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container .box:nth-child(1) .ver{
+    background: #0aaaf5;
+}
+
+.container .box .carta{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,-50%,50px);
+}
