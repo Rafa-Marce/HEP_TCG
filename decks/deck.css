@@ -28,6 +28,7 @@ body {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  visibility: hidden;
 }
 
 .modal_content {

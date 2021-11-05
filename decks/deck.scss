@@ -21,10 +21,10 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.7);
-    position: fixed;
+    position: absolute;
     align-items: center;
     justify-content: space-around;
-    //visibility: hidden;
+    visibility: visible;
 }
 
 .modal_content{

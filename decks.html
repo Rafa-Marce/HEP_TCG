@@ -35,12 +35,14 @@
  
       // FUNÇÃO DA CARTA // CSS = carta.scss
       function Image(props){        
+         
          return(   
             <div className="container">             
                <div className="box">
                   <button onClick = {function t(){
+                     modal.classList.toggle('modal_active');
                      return(
-                        alert(props.src)
+                        <LookCarta />
                      )  
                   }} className ="ver">Ver carta</button>
                   <img src={props.src} className="carta"/>
@@ -66,7 +68,7 @@
                   <Image src ='decks/image/magic2.png' />
                   <Image src ='decks/image/magic3.png' />
                   <Image src ='decks/image/magic4.jpg' />
-		  <Image src ='decks/image/cartaGellMann.png' />
+                  <Image src ='decks/image/cartaGellMann.png' />
                </div>
             )
          }
@@ -87,7 +89,7 @@
             <div>
                <Navigation />
                <ListImage /> 
-               
+               //<LookCarta />
             </div>,
             document.getElementById('root')
          )
